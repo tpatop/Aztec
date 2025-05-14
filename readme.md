@@ -1,6 +1,6 @@
 # Aztec Sequencer Node
 
-## [Russian version](#readme.ru.md)
+## [Russian version](readme.ru.md)
 
 ## ⚠️ Server Requirements
 
