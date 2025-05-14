@@ -2,7 +2,7 @@
 
 ## [Russian version](readme.ru.md)
 
-## ⚠️ Server Requirements
+## Server Requirements
 
 **Minimum:**  
 8 CPU, 16 GB RAM, 100+ SSD
@@ -13,7 +13,7 @@ Pay for servers with crypto or Russian cards:
 [play2go](https://play2go.cloud/?ref_id=q7Of8tsD3Ko)  
 [vdsiba](https://www.vdsina.com/?partner=n974g9fq23)
 
-## ⚠️ Preparation Before Installation
+## Preparation Before Installation
 
 ### Funding Your Wallet
 
@@ -23,7 +23,7 @@ You will need a new EVM wallet with test ETH tokens on the Sepolia network. Use 
 
 You need an Ethereum Sepolia RPC and Beacon endpoint for the node to work. It is recommended to deploy your own service or buy a private RPC (I can provide one if needed).
 
-## 🛠️ Node Installation
+## Node Installation
 
 1. Open your terminal and connect to your server via SSH.
 2. Update system components and install required utilities:
