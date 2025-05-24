@@ -81,7 +81,7 @@ You need an Ethereum Sepolia RPC and Beacon endpoint for the node to work. It is
         ports:
           - 40400:40400/tcp
           - 40400:40400/udp
-          - 8081:8080
+          - 8080:8080
       ```
     Save with CTRL+S, CTRL+X
 
