@@ -63,26 +63,26 @@ You need an Ethereum Sepolia RPC and Beacon endpoint for the node to work. It is
     Paste the following snippet, change ports if needed:
     ```
     services:
-        node:
-            image: aztecprotocol/aztec:0.85.0-alpha-testnet.5
-            environment:
-            ETHEREUM_HOSTS: "${L1_SEPOLIA_RPC_URL}"
-            L1_CONSENSUS_HOST_URLS: "${L1_BEACON_URLS}"
-            DATA_DIRECTORY: /data
-            VALIDATOR_PRIVATE_KEY: "${VALIDATOR_PRIVATE_KEY}"
-            P2P_IP: "${P2P_IP}"
-            PXE_PORT: "${PXE_PORT}"
-            TXE_PORT: "${TXE_PORT}"
-            LOG_LEVEL: debug
-            entrypoint: >
-            sh -c 'node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet start --node --archiver --sequencer'
-            volumes:
-            - /home/my-node/node:/data
-            ports:
-            - 40400:40400/tcp
-            - 40400:40400/udp
-            - 8080:8080
-    ```
+      node:
+        image: aztecprotocol/aztec:0.87.2
+        environment:
+          ETHEREUM_HOSTS: "${ETHEREUM_HOSTS}"
+          L1_CONSENSUS_HOST_URLS: "${L1_CONSENSUS_HOST_URLS}"
+          DATA_DIRECTORY: /data
+          VALIDATOR_PRIVATE_KEY: "${VALIDATOR_PRIVATE_KEY}"
+          P2P_IP: "${P2P_IP}"
+          PXE_PORT: "${PXE_PORT}"
+          TXE_PORT: "${TXE_PORT}"
+          LOG_LEVEL: debug
+        entrypoint: >
+          sh -c 'node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet start --node --archiver --sequencer'
+        volumes:
+          - /home/aztec/node:/data
+        ports:
+          - 40400:40400/tcp
+          - 40400:40400/udp
+          - 8081:8080
+      ```
     Save with CTRL+S, CTRL+X
 
     Create a configuration file:
